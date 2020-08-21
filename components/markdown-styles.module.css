@@ -1,0 +1,45 @@
+.markdown {
+  @apply text-lg leading-relaxed;
+}
+
+.markdown p,
+.markdown ul,
+.markdown ol,
+.markdown blockquote {
+  @apply my-6;
+}
+
+.markdown h2 {
+  @apply text-3xl mt-12 mb-4 leading-snug;
+}
+
+.markdown h3 {
+  @apply text-2xl mt-8 mb-4 leading-snug;
+}
+
+.markdown ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.markdown ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+.markdown li {
+  margin: 0 0 3px 0;
+  line-height: 2;
+}
+
+.markdown a {
+  font-style: italic;
+}
+
+.markdown a:hover {
+  text-decoration: underline;
+}
+
+.markdown p {
+  line-height: 2;
+}

@@ -1,0 +1,29 @@
+@tailwind base;
+
+/* Write your own custom base styles here */
+body.light-mode {
+  background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/papyrus.png);
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+body.dark-mode {
+  background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/papyrus-dark.png);
+  color: #dfdfdf;
+}
+
+*:focus {
+outline: 0 !important;
+}
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Write you own custom component styles here */
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */

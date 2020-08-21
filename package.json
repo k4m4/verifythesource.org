@@ -1,0 +1,104 @@
+{
+	"name": "verifythesource.org",
+	"version": "1.0.0",
+	"scripts": {
+		"dev": "next",
+		"build": "next build",
+		"start": "next start",
+		"lint": "xo",
+		"lint-md": "remark _posts"
+	},
+	"xo": {
+		"extends": "xo-react",
+		"parser": "babel-eslint",
+		"envs": [
+			"node",
+			"browser"
+		],
+		"semicolon": false,
+		"overrides": [
+			{
+				"files": "pages/_document.js",
+				"rules": {
+					"react/no-danger": "off"
+				}
+			},
+			{
+				"files": "components/post-body.js",
+				"rules": {
+					"react/no-danger": "off"
+				}
+			}
+		],
+		"rules": {
+			"object-curly-spacing": 0,
+			"comma-dangle": 0,
+			"react/jsx-tag-spacing": 0,
+			"unicorn/filename-case": 0,
+			"import/no-unassigned-import": [
+				"error",
+				{
+					"allow": [
+						"*.css",
+						"**/*.css",
+						"cypress/support/**"
+					]
+				}
+			],
+			"camelcase": [
+				"error",
+				{
+					"allow": [
+						"site_name"
+					]
+				}
+			],
+			"no-lonely-if": 0,
+			"no-use-extend-native/no-use-extend-native": 0
+		}
+	},
+	"remarkConfig": {
+		"plugins": [
+			"lint",
+			"preset-lint-recommended",
+			"lint-list-item-indent",
+			"lint-no-inline-padding",
+			"lint-no-literal-urls",
+			"lint-no-duplicate-headings-in-section",
+			"lint-no-empty-url",
+			"lint-list-item-bullet-indent",
+			"remark-lint-no-heading-punctuation"
+		]
+	},
+	"dependencies": {
+		"classnames": "2.2.6",
+		"date-fns": "2.10.0",
+		"gray-matter": "4.0.2",
+		"marked": "^1.1.1",
+		"next": "latest",
+		"next-dark-mode": "^2.3.0",
+		"react": "^16.13.0",
+		"react-dom": "^16.13.0",
+		"react-feather": "^2.0.8",
+		"reading-time": "^1.2.0",
+		"use-dark-mode": "^2.3.1"
+	},
+	"devDependencies": {
+		"babel-eslint": "^10.1.0",
+		"eslint": "^7.7.0",
+		"eslint-config-xo": "^0.32.1",
+		"eslint-config-xo-react": "^0.23.0",
+		"eslint-plugin-react": "^7.20.6",
+		"eslint-plugin-react-hooks": "^4.1.0",
+		"postcss-preset-env": "^6.7.0",
+		"remark-cli": "^8.0.1",
+		"remark-lint-list-item-indent": "^2.0.1",
+		"remark-lint-no-duplicate-headings-in-section": "^2.0.2",
+		"remark-lint-no-empty-url": "^2.0.1",
+		"remark-lint-no-heading-punctuation": "^2.0.1",
+		"remark-lint-no-literal-urls": "^2.0.1",
+		"remark-preset-lint-recommended": "^4.0.1",
+		"tailwindcss": "^1.4.0",
+		"xo": "^0.33.0"
+	}
+}
