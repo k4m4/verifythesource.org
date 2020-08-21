@@ -2,6 +2,8 @@
 
 > This repo contains the source code for [`verifythesource.org`](https://verifythesource.org).
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?s=https://github.com/k4m4/verifythesource.org)
+
 ## Development
 
 Install the dependencies and start the development server:
@@ -13,12 +15,6 @@ Install the dependencies and start the development server:
 ```
 
 The site should be up and running on [http://localhost:3000](http://localhost:3000)!
-
-## Deploy
-
-Deploy `VerifyTheSource.org` using [Vercel](https://vercel.com):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?s=https://github.com/k4m4/verifythesource.org)
 
 ## Credits
 
