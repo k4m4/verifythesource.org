@@ -2,13 +2,13 @@
 
 /* Write your own custom base styles here */
 body.light-mode {
-  background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/papyrus.png);
+  background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/papyrus.png);
   color: black;
   transition: background-color 0.3s ease;
 }
 
 body.dark-mode {
-  background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/papyrus-dark.png);
+  background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/papyrus-dark.png);
   color: #dfdfdf;
 }
 
